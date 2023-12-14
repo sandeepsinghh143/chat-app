@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    background-color: white;
+    color: blueviolet;
+}
+
+.messages-outer{
+    position: relative;
+    height:calc(100vh - 55px);
+    padding:29px 1.5vw;
+    top:25px;
+}
+
+.messages-outer .messages{
+    height:100%;
+    border:1px solid blueviolet;
+    overflow:scroll;
+    padding: 0px 10px;
+    border-radius: 10px;
+    background-color: #cccccc;
+}
+.messages::-webkit-scrollbar{
+    display: none;
+}
+
+.user{
+    padding: 5px;
+    position:fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+}
+
+.user input{
+    width:80%;
+    padding:10px 20px;
+    font-size: 20px;
+    border: 1px solid blueviolet;
+    border-radius: 10px;
+}
+
+.user input:focus{
+    border: none;
+    outline: 1px solid red;
+}
+
+.user button{
+    width: 17%;
+    padding: 11px;
+    font-size: 20px;
+    background-color: blueviolet;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.user-text, .client-text{
+    font-size: 20px;
+    padding:10px;
+    background-color: #ffffff;
+    width:fit-content;
+    margin-top: 10px;
+    border-radius: 5px;
+    word-wrap: break-word;
+    max-width: 60vw;
+}
+
+.text-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.client-text{
+    background-color: aqua;
+}
